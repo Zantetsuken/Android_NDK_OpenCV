@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="draw_type">
+		<item>なし</item>
+		<item>ドロイド</item>
+		<item>ハート</item>
+	</string-array>
+</resources>

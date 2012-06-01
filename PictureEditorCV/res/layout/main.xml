@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+    <TableLayout android:id="@+id/menuLayout1"
+     android:visibility="visible"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent">
+        <TableRow android:id="@+id/menuRow1"
+	     android:visibility="gone"
+         android:stretchColumns="1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+            <ImageButton android:layout_width="wrap_content" android:src="@drawable/pen" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/penButton" android:minWidth="100dp"></ImageButton>
+            <ImageButton android:layout_width="wrap_content" android:src="@drawable/eraser" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/eraserButton" android:minWidth="100dp"></ImageButton>
+			<ImageButton android:layout_width="wrap_content" android:src="@drawable/redo"  android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/redoButton" android:minWidth="100dp"></ImageButton>
+		    <ImageButton android:layout_width="wrap_content" android:src="@drawable/undo"  android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/undoButton" android:minWidth="100dp"></ImageButton>
+<!--
+            <ImageButton android:layout_width="wrap_content" android:src="@drawable/pen" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/penButton"></ImageButton>
+            <ImageButton android:layout_width="wrap_content" android:src="@drawable/eraser" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/eraserButton"></ImageButton>
+ -->
+  			<Spinner android:id="@+id/Spinner01" android:entries="@array/draw_type"  android:layout_width="160dp"  android:layout_height="fill_parent"></Spinner>
+
+              </TableRow>
+        <TableRow android:id="@+id/menuRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+            <Button android:gravity="bottom|center"
+            android:id="@+id/menuButton1"
+		    android:visibility="visible"
+            android:text="▽"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"></Button>
+        </TableRow>
+    </TableLayout>
+    <!--
+    <com.vsn.edit.cv.PictureDraw android:id="@+id/view1"
+     android:layout_width="match_parent"
+     android:layout_height="500dip"
+     android:layout_weight="1">
+     </com.vsn.edit.cv.PictureDraw>  -->
+    <com.vsn.edit.cv.PictureView  android:id="@+id/view1"
+     android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"></com.vsn.edit.cv.PictureView>
+</LinearLayout>

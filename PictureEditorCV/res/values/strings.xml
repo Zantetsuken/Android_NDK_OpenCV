@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, PictureEditorCVActivity!</string>
+    <string name="app_name">PictureEditorCV</string>
+    <string name="write_button">保存</string>
+    <string name="write_text">保存名</string>
+</resources>
